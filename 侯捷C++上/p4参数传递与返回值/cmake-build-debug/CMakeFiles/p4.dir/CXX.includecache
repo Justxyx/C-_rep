@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/侯捷C++上/p4参数传递与返回值/main.cpp
+iostream
+-
+

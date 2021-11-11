@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/侯捷C++上/p2文件与类的声明/Complex.h
+
+/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/侯捷C++上/p2文件与类的声明/main.cpp
+iostream
+-
+Complex.h
+/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/侯捷C++上/p2文件与类的声明/Complex.h
+
