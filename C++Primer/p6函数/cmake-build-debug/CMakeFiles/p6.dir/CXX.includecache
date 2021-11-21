@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/C++Primer/p6函数/list.h
+
+/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/C++Primer/p6函数/p6.2参数传递.cpp
+iostream
+-
+list.h
+/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/C++Primer/p6函数/list.h
+

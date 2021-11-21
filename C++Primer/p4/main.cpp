@@ -29,7 +29,20 @@ namespace p1{
 
 }
 
+namespace p2{
+//    1.强制类型转换
+    void test01(){
+        int i = 12;
+        double j = static_cast<double>(i);
+        cout << j << endl;
+    }
+    void ma(){
+        test01();
+    }
+}
+
 int main() {
-    p1::test01();
+//    p1::test01();
+    p2::ma();
     return 0;
 }
