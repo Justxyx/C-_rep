@@ -201,6 +201,30 @@ p6.2参数传递.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/p6.dir/build.make CMakeFiles/p6.dir/p6.2参数传递.cpp.s
 .PHONY : p6.2参数传递.cpp.s
 
+p6.3数组指针与函数指针.o: p6.3数组指针与函数指针.cpp.o
+.PHONY : p6.3数组指针与函数指针.o
+
+# target to build an object file
+p6.3数组指针与函数指针.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p6.dir/build.make CMakeFiles/p6.dir/p6.3数组指针与函数指针.cpp.o
+.PHONY : p6.3数组指针与函数指针.cpp.o
+
+p6.3数组指针与函数指针.i: p6.3数组指针与函数指针.cpp.i
+.PHONY : p6.3数组指针与函数指针.i
+
+# target to preprocess a source file
+p6.3数组指针与函数指针.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p6.dir/build.make CMakeFiles/p6.dir/p6.3数组指针与函数指针.cpp.i
+.PHONY : p6.3数组指针与函数指针.cpp.i
+
+p6.3数组指针与函数指针.s: p6.3数组指针与函数指针.cpp.s
+.PHONY : p6.3数组指针与函数指针.s
+
+# target to generate assembly for a file
+p6.3数组指针与函数指针.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p6.dir/build.make CMakeFiles/p6.dir/p6.3数组指针与函数指针.cpp.s
+.PHONY : p6.3数组指针与函数指针.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -219,6 +243,9 @@ help:
 	@echo "... p6.2参数传递.o"
 	@echo "... p6.2参数传递.i"
 	@echo "... p6.2参数传递.s"
+	@echo "... p6.3数组指针与函数指针.o"
+	@echo "... p6.3数组指针与函数指针.i"
+	@echo "... p6.3数组指针与函数指针.s"
 .PHONY : help
 
 

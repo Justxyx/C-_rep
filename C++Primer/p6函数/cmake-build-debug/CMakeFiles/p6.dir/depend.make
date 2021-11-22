@@ -10,3 +10,6 @@ CMakeFiles/p6.dir/p6.1函数基础.cpp.o: \
 CMakeFiles/p6.dir/p6.2参数传递.cpp.o: \
  ../list.h \
  ../p6.2参数传递.cpp
+CMakeFiles/p6.dir/p6.3数组指针与函数指针.cpp.o: \
+ ../list.h \
+ ../p6.3数组指针与函数指针.cpp

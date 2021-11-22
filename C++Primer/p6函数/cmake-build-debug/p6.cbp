@@ -90,6 +90,9 @@
 		<Unit filename="/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/C++Primer/p6函数/p6.2参数传递.cpp">
 			<Option target="p6"/>
 		</Unit>
+		<Unit filename="/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/C++Primer/p6函数/p6.3数组指针与函数指针.cpp">
+			<Option target="p6"/>
+		</Unit>
 		<Unit filename="/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/C++Primer/p6函数/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
