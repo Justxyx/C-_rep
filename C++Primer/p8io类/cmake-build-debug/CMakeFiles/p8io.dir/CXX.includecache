@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/C++Primer/p8io类/list.h
+
+/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/C++Primer/p8io类/p8.2.cpp
+list.h
+/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/C++Primer/p8io类/list.h
+iostream
+-
+fstream
+-
+string
+-
+vector
+-
+
