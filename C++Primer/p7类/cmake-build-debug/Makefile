@@ -177,6 +177,30 @@ p7.1.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/p7.dir/build.make CMakeFiles/p7.dir/p7.1.cpp.s
 .PHONY : p7.1.cpp.s
 
+p7.2_re.o: p7.2_re.cpp.o
+.PHONY : p7.2_re.o
+
+# target to build an object file
+p7.2_re.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p7.dir/build.make CMakeFiles/p7.dir/p7.2_re.cpp.o
+.PHONY : p7.2_re.cpp.o
+
+p7.2_re.i: p7.2_re.cpp.i
+.PHONY : p7.2_re.i
+
+# target to preprocess a source file
+p7.2_re.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p7.dir/build.make CMakeFiles/p7.dir/p7.2_re.cpp.i
+.PHONY : p7.2_re.cpp.i
+
+p7.2_re.s: p7.2_re.cpp.s
+.PHONY : p7.2_re.s
+
+# target to generate assembly for a file
+p7.2_re.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p7.dir/build.make CMakeFiles/p7.dir/p7.2_re.cpp.s
+.PHONY : p7.2_re.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +216,9 @@ help:
 	@echo "... p7.1.o"
 	@echo "... p7.1.i"
 	@echo "... p7.1.s"
+	@echo "... p7.2_re.o"
+	@echo "... p7.2_re.i"
+	@echo "... p7.2_re.s"
 .PHONY : help
 
 

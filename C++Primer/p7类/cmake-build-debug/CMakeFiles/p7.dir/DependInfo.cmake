@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/C++Primer/p7类/main.cpp" "/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/C++Primer/p7类/cmake-build-debug/CMakeFiles/p7.dir/main.cpp.o"
   "/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/C++Primer/p7类/p7.1.cpp" "/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/C++Primer/p7类/cmake-build-debug/CMakeFiles/p7.dir/p7.1.cpp.o"
+  "/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/C++Primer/p7类/p7.2 re.cpp" "/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/C++Primer/p7类/cmake-build-debug/CMakeFiles/p7.dir/p7.2_re.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

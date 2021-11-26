@@ -2,6 +2,7 @@
 #include "list.h"
 
 int main() {
-    main1();
+    main2();
+//    main1();
     return 0;
 }

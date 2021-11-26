@@ -7,3 +7,6 @@ CMakeFiles/p7.dir/main.cpp.o: \
 CMakeFiles/p7.dir/p7.1.cpp.o: \
  ../list.h \
  ../p7.1.cpp
+CMakeFiles/p7.dir/p7.2_re.cpp.o: \
+ ../list.h \
+ ../p7.2\ re.cpp

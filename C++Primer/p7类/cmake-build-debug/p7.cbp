@@ -87,6 +87,9 @@
 		<Unit filename="/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/C++Primer/p7类/p7.1.cpp">
 			<Option target="p7"/>
 		</Unit>
+		<Unit filename="/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/C++Primer/p7类/p7.2 re.cpp">
+			<Option target="p7"/>
+		</Unit>
 		<Unit filename="/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/C++Primer/p7类/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

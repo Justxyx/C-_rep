@@ -3,4 +3,4 @@ project(p7)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(p7 main.cpp list.h p7.1.cpp)
+add_executable(p7 main.cpp list.h p7.1.cpp "p7.2 re.cpp")

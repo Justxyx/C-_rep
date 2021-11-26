@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/C++Primer/p9顺序容器/main1.cpp
+iostream
+-
+vector
+-
+deque
+-
+list
+-
+forward_list
+-
+array
+-
+string
+/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/C++Primer/p9顺序容器/string
+
