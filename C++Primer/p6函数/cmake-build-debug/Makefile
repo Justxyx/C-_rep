@@ -153,6 +153,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/p6.dir/build.make CMakeFiles/p6.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+p4二刷.o: p4二刷.cpp.o
+.PHONY : p4二刷.o
+
+# target to build an object file
+p4二刷.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p6.dir/build.make CMakeFiles/p6.dir/p4二刷.cpp.o
+.PHONY : p4二刷.cpp.o
+
+p4二刷.i: p4二刷.cpp.i
+.PHONY : p4二刷.i
+
+# target to preprocess a source file
+p4二刷.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p6.dir/build.make CMakeFiles/p6.dir/p4二刷.cpp.i
+.PHONY : p4二刷.cpp.i
+
+p4二刷.s: p4二刷.cpp.s
+.PHONY : p4二刷.s
+
+# target to generate assembly for a file
+p4二刷.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p6.dir/build.make CMakeFiles/p6.dir/p4二刷.cpp.s
+.PHONY : p4二刷.cpp.s
+
 p6.1函数基础.o: p6.1函数基础.cpp.o
 .PHONY : p6.1函数基础.o
 
@@ -237,6 +261,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... p4二刷.o"
+	@echo "... p4二刷.i"
+	@echo "... p4二刷.s"
 	@echo "... p6.1函数基础.o"
 	@echo "... p6.1函数基础.i"
 	@echo "... p6.1函数基础.s"

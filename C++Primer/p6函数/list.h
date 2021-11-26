@@ -7,4 +7,5 @@
 void main1();
 void main2();
 void main3();
+void main4();
 #endif //P6_LIST_H

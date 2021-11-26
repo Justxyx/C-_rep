@@ -4,6 +4,8 @@
 CMakeFiles/p6.dir/main.cpp.o: \
  ../list.h \
  ../main.cpp
+CMakeFiles/p6.dir/p4二刷.cpp.o: \
+ ../p4二刷.cpp
 CMakeFiles/p6.dir/p6.1函数基础.cpp.o: \
  ../list.h \
  ../p6.1函数基础.cpp
