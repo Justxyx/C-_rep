@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/C++Primer/p10泛型算法/p10.1.cpp
+iostream
+-
+vector
+-
+algorithm
+/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/C++Primer/p10泛型算法/algorithm
+numeric
+-
+list
+-
+
