@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/C++Primer/p12动态内存/list.h
+vector
+-
+string
+-
+initializer_list
+-
+memory
+-
+exception
+-
+
+/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/C++Primer/p12动态内存/p12.1.cpp
+iostream
+-
+list.h
+/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/C++Primer/p12动态内存/list.h
+
