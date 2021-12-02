@@ -148,8 +148,19 @@ void test14(){
     cout << *p2 << endl;
 }
 
+void test15(){
+    shared_ptr<string> p(new string("hello jay"));
+    weak_ptr<string> p1(p);
+//    cout << *p1 << endl;   // 因为p1 可能不存在 所以不可以直接访问p1
+    if(auto p2 = p1.lock()){     // 如果p1不存在，直接返回false 不会执行下列语句
+        cout << *p2 << endl;
+        cout << p2.use_count() << endl;
+    }
+}
+
 void main1(){
-    test14();
+    test15();
+//    test14();
 //    test12();
 //    test11();
 //    test10();
