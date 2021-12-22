@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/stl源码分析/assist.h
+iostream
+-
+
+/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/stl源码分析/源码分析.cpp
+iostream
+-
+array
+-
+assist.h
+/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/stl源码分析/assist.h
+vector
+-
+stdexcept
+-
+string
+-
+cstdlib
+-
+cstdio
+-
+iostream
+-
+ctime
+-
+algorithm
+-
+assist.h
+/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/stl源码分析/assist.h
+
