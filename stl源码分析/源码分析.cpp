@@ -18,6 +18,13 @@ using namespace std;
 #include <ctime>
 #include <algorithm>    // sort()
 #include "assist.h"
+#include <list>
+#include <forward_list>
+#include <deque>
+#include <set>
+#include <map>
+#include <unordered_set>
+#include <unordered_map>
 namespace xm01{
     const long ASIZE = 500000;
     void test_array(){
@@ -122,9 +129,373 @@ namespace xm02{
     }
 }
 
+/**
+ * list  双向队列
+ */
+namespace xm03{
+    void test_list(long &value){
+        list<string> c;
+        char buf[10];
+        clock_t timeStart = clock();
+        for(long i = 0;i < value ; ++i){
+            try{
+                snprintf(buf,10,"%d",rand()%10000);
+                c.push_back(string(buf));
+            }catch(exception &p) {
+                cout << "index out " <<  p.what()<< endl;
+                abort();
+            }
+        }
+        cout << "milli - seconds:" << clock() - timeStart << endl;
+        cout << "size: " << c.size() << endl;
+        cout << "front: " << c.front() << endl;
+        cout << "back: " << c.back() << endl;
+        cout << "max size:" << c.max_size() << endl;
+
+        string target = get_a_target_string();
+        timeStart = clock();
+        list<string>::iterator pItem = ::find(c.begin(),c.end(),target);
+        cout << "find time is :" << timeStart - clock() << endl;
+        if  (pItem != c.end()){
+            cout << "has found :" << *pItem << endl;
+        }else{
+            cout << "has not found" << endl;
+        }
+
+        timeStart = clock();
+        c.sort();
+        cout << "sort has spand :" << timeStart - clock() << "mils" << endl;
+    }
+    void main(){
+        long target = 1000000;
+        test_list(target);
+    }
+}
+
+/**
+ * forward_list  单向队列
+ */
+namespace xm04{
+    void test_forward_list(long &value){
+        forward_list<string> c;
+        char buf[10];
+        clock_t timeStart = clock();
+        for(long i = 0;i < value ; ++i){
+            try{
+                snprintf(buf,10,"%d",rand()%10000);
+                c.push_front(string(buf));
+            }catch(exception &p) {
+                cout << "index out " <<  p.what()<< endl;
+                abort();
+            }
+        }
+        cout << "milli - seconds:" << clock() - timeStart << endl;
+        cout << "front: " << c.front() << endl;
+        cout << "max size:" << c.max_size() << endl;
+
+        string target = get_a_target_string();
+        timeStart = clock();
+        forward_list<string>::iterator pItem = ::find(c.begin(),c.end(),target);
+        cout << "find time is :" << clock() - timeStart << endl;
+        if  (pItem != c.end()){
+            cout << "has found :" << *pItem << endl;
+        }else{
+            cout << "has not found" << endl;
+        }
+
+        timeStart = clock();
+        c.sort();
+        cout << "sort has spand :" << clock() - timeStart<< "mils" << endl;
+    }
+    void main(){
+        long target = 1000000;
+        test_forward_list(target);
+    }
+}
 
 
-int main(){
+/**
+ * forward_list  单向队列
+ */
+namespace xm05{
+    void test_deque(long &value){
+        deque<string> c;
+        char buf[10];
+        clock_t timeStart = clock();
+        for(long i = 0;i < value ; ++i){
+            try{
+                snprintf(buf,10,"%d",rand()%10000);
+                c.push_front(string(buf));
+            }catch(exception &p) {
+                cout << "index out " <<  p.what()<< endl;
+                abort();
+            }
+        }
+        cout << "milli - seconds:" << clock() - timeStart << endl;
+        cout << "front: " << c.front() << endl;
+        cout << "back:" << c.back() << endl;
+        cout << "size:" << c.size() << endl;
+        cout << "max size:" << c.max_size() << endl;
+
+        string target = get_a_target_string();
+        timeStart = clock();
+        deque<string>::iterator pItem = ::find(c.begin(),c.end(),target);
+        cout << "find time is :" << clock() - timeStart << endl;
+        if  (pItem != c.end()){
+            cout << "has found :" << *pItem << endl;
+        }else{
+            cout << "has not found" << endl;
+        }
+
+        timeStart = clock();
+        ::sort(c.begin(),c.end());
+        cout << "sort has spand :" << clock() - timeStart<< "mils" << endl;
+    }
+    void main(){
+        long target = 1000000;
+        test_deque(target);
+    }
+}
+
+/**
+ * multiset  允许放重复值
+ * 没必要sort
+ * 插入慢 查找快 空间小
+ */
+namespace xm06{
+    void test_multiset(long &value){
+        multiset<string> c;
+        char buf[10];
+        clock_t timeStart = clock();
+        for(long i = 0;i < value ; ++i){
+            try{
+                snprintf(buf,10,"%d",rand()%10000);
+                c.insert(string(buf));
+            }catch(exception &p) {
+                cout << "index out " <<  p.what()<< endl;
+                abort();
+            }
+        }
+        cout << "milli - seconds:" << clock() - timeStart << endl;
+        cout << "size:" << c.size() << endl;
+        cout << "max size:" << c.max_size() << endl;
+
+        string target = get_a_target_string();
+        timeStart = clock();
+        multiset<string>::iterator pItem = ::find(c.begin(),c.end(),target);
+        cout << "find time is :" << clock() - timeStart << endl;
+        if  (pItem != c.end()){
+            cout << "has found :" << *pItem << endl;
+        }else{
+            cout << "has not found" << endl;
+        }
+
+
+    }
+    void main(){
+        long target = 1000000;
+        test_multiset(target);
+    }
+}
+/**
+ * multimap  允许放重复值
+ *
+ * 插入慢 查找快 空间小
+ */
+namespace xm07{
+    void test_multimap(long &value){
+        multimap<long,string> c;
+        char buf[10];
+        clock_t timeStart = clock();
+        for(long i = 0;i < value ; ++i){
+            try{
+                snprintf(buf,10,"%d",rand()%10000);
+                c.insert(pair<long,string>(i,string(buf)));
+            }catch(exception &p) {
+                cout << "index out " <<  p.what()<< endl;
+                abort();
+            }
+        }
+        cout << "milli - seconds:" << clock() - timeStart << endl;
+        cout << "size:" << c.size() << endl;
+        cout << "max size:" << c.max_size() << endl;
+
+        string target = get_a_target_string();
+        timeStart = clock();
+        auto pItem =  c.find(1345);
+        cout << "find time is :" << clock() - timeStart << endl;
+        if  (pItem != c.end()){
+            cout << "has found :" << pItem->second << endl;
+        }else{
+            cout << "has not found" << endl;
+        }
+
+
+    }
+    void main(){
+        long target = 1000000;
+        test_multimap(target);
+    }
+}
+
+/**
+ * unordered_set   hash set
+ * 插入查找都挺快  就是空间有点大   桶的个数比数据个数要大
+ */
+namespace xm08{
+    void test_multiset(long &value){
+        unordered_set<string> c;
+        char buf[10];
+        clock_t timeStart = clock();
+        for(long i = 0;i < value ; ++i){
+            try{
+                snprintf(buf,10,"%d",rand()%10000);
+                c.insert(string(buf));
+            }catch(exception &p) {
+                cout << "index out " <<  p.what()<< endl;
+                abort();
+            }
+        }
+        cout << "milli - seconds:" << clock() - timeStart << endl;
+        cout << "size:" << c.size() << endl;
+        cout << "max size:" << c.max_size() << endl;
+        cout << "bucker_count" << c.bucket_count() << endl;   // 桶的个数
+        cout << "load_factor:" << c.load_factor() << endl;    // 装载因子问题
+        cout << " max bucker_count" << c.max_bucket_count() << endl;   // 最大桶的个数
+        cout << "max load_factor:" << c.max_load_factor() << endl;    // 最大装载因子问题
+
+        string target = get_a_target_string();
+        timeStart = clock();
+        auto pItem = ::find(c.begin(),c.end(),target);
+        cout << "find time is :" << clock() - timeStart << endl;
+        if  (pItem != c.end()){
+            cout << "has found :" << *pItem << endl;
+        }else{
+            cout << "has not found" << endl;
+        }
+
+
+    }
+    void main(){
+        long target = 1000000;
+        test_multiset(target);
+    }
+}
+
+/**
+ * unordered_map  hash 结构 查找快
+ */
+namespace xm09{
+    void test_multimap(long &value){
+        unordered_map<long,string> c;
+        char buf[10];
+        clock_t timeStart = clock();
+        for(long i = 0;i < value ; ++i){
+            try{
+                snprintf(buf,10,"%d",rand()%10000);
+                c.insert(pair<long,string>(i,string(buf)));
+            }catch(exception &p) {
+                cout << "index out " <<  p.what()<< endl;
+                abort();
+            }
+        }
+        cout << "milli - seconds:" << clock() - timeStart << endl;
+        cout << "size:" << c.size() << endl;
+        cout << "max size:" << c.max_size() << endl;
+        cout << "bucker_count" << c.bucket_count() << endl;   // 桶的个数
+        cout << "load_factor:" << c.load_factor() << endl;    // 装载因子问题
+        cout << " max bucker_count" << c.max_bucket_count() << endl;   // 最大桶的个数
+        cout << "max load_factor:" << c.max_load_factor() << endl;    // 最大装载因子问题
+
+        string target = get_a_target_string();
+        timeStart = clock();
+        auto pItem =  c.find(1345);
+        cout << "find time is :" << clock() - timeStart << endl;
+        if  (pItem != c.end()){
+            cout << "has found :" << pItem->second << endl;
+        }else{
+            cout << "has not found" << endl;
+        }
+
+
+    }
+    void main(){
+        long target = 1000000;
+        test_multimap(target);
+    }
+}
+
+/**
+ * 泛化与特化问题
+ */
+namespace xm10{
+    template<class T>
+    class type_traits{
+        /**
+         * 泛化
+         */
+    };
+    template<> class type_traits<int>{
+        /**
+         * 特化1
+         */
+    };
+    template<> class type_traits<double>{
+        /**
+         * 特化1
+         */
+    };
+}
+
+/**
+ * 泛化与偏特化问题
+ */
+namespace xm11{
+//    1. 偏特化1
+    template<class T,class alloc = int>
+    class type_traits{
+        /**
+         * ....
+         */
+    };
+    template<class alloc>
+    class type_traits<bool,alloc>{
+        /**
+         * 偏特化问题
+         * 如果是bool值的话，指定为该模板
+         */
+    };
+//    ---------------------------------------
+    template<class T>
+    class demo{
+        /**
+         * ...
+         */
+    };
+    template<class T>
+    class demo<T*>{
+        /**
+         * 偏特化
+         * 指定为指针
+         */
+    };
+    template<class T>
+    class demo<const T*>{
+        /**
+         * 偏特化
+         * 指定为const 指针
+         */
+    };
+}
+
+int main1(){
 //    xm01::test_array();
-    xm02::main();
+//    xm02::main();
+//    xm03::main();
+//    xm04::main();
+//    xm05::main();
+//    xm06::main();
+//    xm07::main();
+//    xm08::main();
+//    xm09::main();
 }

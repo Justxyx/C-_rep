@@ -153,6 +153,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stl.dir/build.make CMakeFiles/stl.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+p1allocators.o: p1allocators.cpp.o
+.PHONY : p1allocators.o
+
+# target to build an object file
+p1allocators.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stl.dir/build.make CMakeFiles/stl.dir/p1allocators.cpp.o
+.PHONY : p1allocators.cpp.o
+
+p1allocators.i: p1allocators.cpp.i
+.PHONY : p1allocators.i
+
+# target to preprocess a source file
+p1allocators.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stl.dir/build.make CMakeFiles/stl.dir/p1allocators.cpp.i
+.PHONY : p1allocators.cpp.i
+
+p1allocators.s: p1allocators.cpp.s
+.PHONY : p1allocators.s
+
+# target to generate assembly for a file
+p1allocators.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stl.dir/build.make CMakeFiles/stl.dir/p1allocators.cpp.s
+.PHONY : p1allocators.cpp.s
+
 源码分析.o: 源码分析.cpp.o
 .PHONY : 源码分析.o
 
@@ -189,6 +213,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... p1allocators.o"
+	@echo "... p1allocators.i"
+	@echo "... p1allocators.s"
 	@echo "... 源码分析.o"
 	@echo "... 源码分析.i"
 	@echo "... 源码分析.s"

@@ -84,6 +84,9 @@
 		<Unit filename="/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/stl源码分析/main.cpp">
 			<Option target="stl"/>
 		</Unit>
+		<Unit filename="/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/stl源码分析/p1allocators.cpp">
+			<Option target="stl"/>
+		</Unit>
 		<Unit filename="/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/stl源码分析/源码分析.cpp">
 			<Option target="stl"/>
 		</Unit>

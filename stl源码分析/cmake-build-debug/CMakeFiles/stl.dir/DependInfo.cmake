@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/stl源码分析/main.cpp" "/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/stl源码分析/cmake-build-debug/CMakeFiles/stl.dir/main.cpp.o"
+  "/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/stl源码分析/p1allocators.cpp" "/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/stl源码分析/cmake-build-debug/CMakeFiles/stl.dir/p1allocators.cpp.o"
   "/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/stl源码分析/源码分析.cpp" "/Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/stl源码分析/cmake-build-debug/CMakeFiles/stl.dir/源码分析.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

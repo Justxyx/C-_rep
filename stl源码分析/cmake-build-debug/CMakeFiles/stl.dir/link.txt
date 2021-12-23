@@ -1,1 +1,1 @@
-/Library/Developer/CommandLineTools/usr/bin/c++ -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/stl.dir/main.cpp.o CMakeFiles/stl.dir/源码分析.cpp.o -o stl 
+/Library/Developer/CommandLineTools/usr/bin/c++ -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/stl.dir/main.cpp.o CMakeFiles/stl.dir/源码分析.cpp.o CMakeFiles/stl.dir/p1allocators.cpp.o -o stl 

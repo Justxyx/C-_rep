@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/stl.dir/main.cpp.o"
+  "CMakeFiles/stl.dir/p1allocators.cpp.o"
   "CMakeFiles/stl.dir/源码分析.cpp.o"
   "stl"
   "stl.pdb"
