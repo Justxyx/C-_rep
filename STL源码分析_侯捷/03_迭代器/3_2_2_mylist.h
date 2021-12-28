@@ -46,16 +46,15 @@ void List<T>::insert_front(T value) {
     ++ _size;
 }
 
-template<typename T>
+template <typename T>
 void List<T>::insert_end(T value) {
-    ListItem<T> *temp = new ListItem<T>(value);
+    ListItem<T>* temp = new ListItem<T>(value);
     ListItem<T> *last = _front;
-    while (last->next != _end){
-        last = last->next;
-    }
-    last->setNext(temp);
+    while (last->next() != _end)
+        last = last->next();
+    last->set_next(temp);
     _end = temp->next();
-    ++_size;
+    _size++;
 }
 
 template<typename T>
