@@ -61,7 +61,8 @@
 				10,
 				11,
 				12,
-				13
+				13,
+				14
 			]
 		}
 	],
@@ -103,7 +104,8 @@
 				10,
 				11,
 				12,
-				13
+				13,
+				14
 			]
 		},
 		{
@@ -113,7 +115,8 @@
 				2,
 				4,
 				7,
-				9
+				9,
+				15
 			]
 		}
 	],
@@ -190,7 +193,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "03_迭代器/3_4_2traits.cpp",
+			"path" : "03_迭代器/3_4_2_traits.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -198,6 +201,17 @@
 			"compileGroupIndex" : 0,
 			"path" : "03_迭代器/3_4_3_traitrs.cpp",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "04_顺序容器/4_2_1_vecotr迭代器问题.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "04_顺序容器/4_2_2_list结构.h",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"

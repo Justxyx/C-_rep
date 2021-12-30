@@ -26,7 +26,7 @@ func(I ite) {
 }
 
 // ...
-int main(){
+int main342(){
     MyIter<int> ite(new int(8));
 
 }
