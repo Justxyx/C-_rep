@@ -9,6 +9,7 @@ using namespace std;
  * 写点笔记:
  *      vector 动态增加大小，并不是在原有的基础上续接空间的。
  *      一旦空间位置重新分配，原来指向vector的指针迭代器就失效了！！！！！！
+ *      只要是连续的空间 就可以使用自身的指针作为迭代器
  *      vector的迭代器就是自身的指针 所以 要用到traits
  */
 template<class T>    // traits 的指针特化版本
