@@ -4,5 +4,5 @@
 
 /**
 *  1. stack 底层为deque
- * 2. stack 没有迭代器
+ * 2. stack 没有迭代器  不可遍历
 */
