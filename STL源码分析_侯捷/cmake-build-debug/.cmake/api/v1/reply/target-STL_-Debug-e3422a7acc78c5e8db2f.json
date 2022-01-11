@@ -70,7 +70,8 @@
 				21,
 				22,
 				23,
-				24
+				24,
+				25
 			]
 		}
 	],
@@ -121,7 +122,8 @@
 				21,
 				22,
 				23,
-				24
+				24,
+				25
 			]
 		},
 		{
@@ -281,6 +283,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "05_关联容器/5_1_1_红黑树问题.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "05_关联容器/5_3_1_set.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
