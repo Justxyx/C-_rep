@@ -1,4 +1,6 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja /Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/STL源码分析_侯捷
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/xiaoyingxiong/projects/ClionProjects/Cpp_rep/STL源码分析_侯捷/cmake-build-debug
+/snap/clion/180/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/xm/projects/Cpp_rep/STL源码分析_侯捷
+CMake Error: CMake was unable to find a build program corresponding to "Unix Makefiles".  CMAKE_MAKE_PROGRAM is not set.  You probably need to select a different build tool.
+CMake Error: CMAKE_C_COMPILER not set, after EnableLanguage
+CMake Error: CMAKE_CXX_COMPILER not set, after EnableLanguage
+-- Configuring incomplete, errors occurred!
+See also "/home/xm/projects/Cpp_rep/STL源码分析_侯捷/cmake-build-debug/CMakeFiles/CMakeOutput.log".
