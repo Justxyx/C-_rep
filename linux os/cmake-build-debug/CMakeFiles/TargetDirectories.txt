@@ -1,3 +1,0 @@
-/home/xm/projects/Cpp_rep/linux os/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/xm/projects/Cpp_rep/linux os/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/xm/projects/Cpp_rep/linux os/cmake-build-debug/CMakeFiles/linux_os.dir
